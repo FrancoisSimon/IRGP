@@ -37,8 +37,7 @@ initial_obs_vars = np.zeros((nb_hidden_vars, 1, nb_states, nb_obs_vars))
 indices_initial_hidden_vars = np.array(np.where(initial_hidden_vars != 0)).T
 indices_initial_obs_vars = np.array(np.where(initial_obs_vars != 0)).T
 
-initial_obs_var_coef_values = indices_initial_obs_vars[np.where(indices_initial_obs_vars != 0)].astype(dtype)
-
+initial_obs_var_coef_values = initial_obs_vars[np.where(initial_obs_vars != 0)]
 initial_hidden_var_coef_values = initial_hidden_vars[np.where(initial_hidden_vars != 0)]
 
 initial_Gaussian_stds = np.ones((nb_hidden_vars, 1, nb_states, 1))
