@@ -1,4 +1,6 @@
-
+from irgp import Initial_layer, Custom_RNN_layer, Final_layer, anomalous_diff_mixture, transpose_layer
+import numpy as np
+import tensorflow as tf
 
 nb_states = 1
 nb_obs_vars = 1
